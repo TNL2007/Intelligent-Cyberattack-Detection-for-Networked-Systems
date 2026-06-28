@@ -2,53 +2,15 @@
 
 ## Overview
 
-This project presents an intelligent intrusion detection system that leverages Artificial Intelligence and Deep Learning to identify cyberattacks in network environments. The model processes network traffic features, learns meaningful representations using neural networks, and classifies different attack types with high accuracy.
+This project is an AI-powered cyberattack detection system that analyzes network traffic and classifies malicious activities using Deep Learning. The system is trained on the MSCAD dataset and provides an interactive web-based interface for predicting cyberattacks from network traffic features.
 
----
-
-## Features
-
-- AI-based cyberattack detection
-- Deep Neural Network for attack classification
-- Network traffic preprocessing and feature scaling
-- Learned feature embeddings for improved detection
-- Multi-class attack classification
-- Model persistence using Keras
-- Label encoding and data normalization
-- Evaluation using confusion matrix and classification metrics
-
----
-
-## Technologies Used
-
-- Python
-- TensorFlow / Keras
-- Scikit-learn
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-
----
-
-## Workflow
-
-1. Load the MSCAD network traffic dataset.
-2. Perform preprocessing and exploratory data analysis.
-3. Split the dataset into training and testing sets.
-4. Normalize features using StandardScaler.
-5. Encode attack labels.
-6. Train a Deep Neural Network classifier.
-7. Extract feature embeddings from the embedding layer.
-8. Detect and classify cyberattacks.
-9. Evaluate model performance using accuracy, precision, recall, F1-score, and confusion matrix.
-
----
-
-## Project Structure
+## Repository Structure
 
 ```
-Intelligent-Cyberattack-Detection/
+Intelligent-Cyberattack-Detection-for-Networked-Systems/
+│
+├── README.md
+├── Untitled2.ipynb
 │
 ├── models/
 │   ├── attack_detector.keras
@@ -58,38 +20,73 @@ Intelligent-Cyberattack-Detection/
 │   ├── label_encoder.pkl
 │   └── test_embedding_df.csv
 │
-├── Untitled2(1).ipynb
-├── requirements.txt
-└── README.md
+└── UI/
+    ├── app.py
+    ├── requirements.txt
+    ├── package.json
+    ├── index.html
+    ├── src/
+    └── dist/
 ```
 
----
+## Features
+
+* AI-powered cyberattack detection
+* Deep Learning-based attack classification
+* Network traffic preprocessing
+* Feature scaling using StandardScaler
+* Label encoding for attack categories
+* Trained Keras models
+* Interactive web interface
+* Multi-class cyberattack prediction
+
+## Technologies Used
+
+### Backend
+
+* Python
+* TensorFlow / Keras
+* Scikit-learn
+* Pandas
+* NumPy
+
+### Frontend
+
+* React (Vite)
+* HTML
+* CSS
+* JavaScript
+
+## Workflow
+
+1. Load the MSCAD dataset.
+2. Preprocess network traffic data.
+3. Normalize input features.
+4. Encode attack labels.
+5. Train the Deep Learning model.
+6. Save trained models.
+7. Load models in the application.
+8. Predict attack categories through the web interface.
+
+## Models Included
+
+* Attack Detection Model
+* Best Attack Detection Model
+* Embedding Classifier
+* Feature Scaler
+* Label Encoder
 
 ## Dataset
 
-This project uses the **MSCAD (Microsoft Cyber Attack Dataset)** for training and evaluating the intrusion detection model.
-
----
-
-## Results
-
-The trained Deep Learning model is capable of:
-
-- Detecting malicious network traffic
-- Classifying different attack categories
-- Learning meaningful feature embeddings
-- Improving intrusion detection performance using AI
-
----
+MSCAD (Microsoft Cyber Security Attack Dataset)
 
 ## Future Improvements
 
-- Real-time network traffic monitoring
-- Web-based dashboard
-- Explainable AI (XAI)
-- API deployment using Flask/FastAPI
-- Integration with SIEM tools
-
+* Real-time packet capture
+* Explainable AI (XAI)
+* Cloud deployment
+* API integration
+* Dashboard analytics
 ---
 
 ## Authors
