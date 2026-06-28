@@ -12,6 +12,9 @@ Intelligent-Cyberattack-Detection-for-Networked-Systems/
 ├── README.md
 ├── Untitled2.ipynb
 │
+├── Notebook/
+│   ├──final_model.ipynb
+│
 ├── models/
 │   ├── attack_detector.keras
 │   ├── best_attack_detector.keras
